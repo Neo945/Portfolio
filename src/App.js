@@ -1,5 +1,5 @@
 import "./app.css";
-// import { useState } from "react";
+import { useState } from "react";
 import { Page, Navbar, Title } from "./components";
 
 function Sample(params) {
@@ -7,7 +7,7 @@ function Sample(params) {
 }
 
 function Cursor(params) {
-  return <div id={"cursor"}></div>;
+  return <div id={"cursor"} className={params.is ? "active" : ""}></div>;
 }
 
 function moveEvent(event) {
@@ -16,15 +16,20 @@ function moveEvent(event) {
   cursor.style.top = event.clientY + "px";
 }
 function App() {
+  const [active, setActive] = useState(false);
   return (
-    <div onMouseMove={moveEvent}>
+    <div
+      onMouseMove={moveEvent}
+      onMouseUp={() => setActive(false)}
+      onMouseDown={() => setActive(true)}
+    >
       <Navbar />
       <div id={"content"}>
-        <Cursor />
-        <Page component={Title} />
-        <Page component={Sample} />
-        <Page component={Sample} />
-        <Page component={Sample} />
+        <Cursor is={active} />
+        <Page id={"home"} component={Title} />
+        <Page id={"about"} component={Sample} />
+        <Page id={"project"} component={Sample} />
+        <Page id={"contact"} component={Sample} />
       </div>
     </div>
   );

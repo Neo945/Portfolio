@@ -16,3 +16,7 @@
   pointer-events: none;
   mix-blend-mode: difference;
 }
+.active {
+  width: 50px !important;
+  height: 50px !important;
+}
