@@ -1,0 +1,9 @@
+#nav{
+    position: fixed;
+    height: 100vh;
+    right: 0px;
+    top: 0px;
+    width: 100px;
+    mix-blend-mode: difference;
+    background-color: white;
+}
