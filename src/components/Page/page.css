@@ -1,8 +1,9 @@
-.page{
-    width: 100vw; 
-    height: 100vh;
-
+.page {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: center;
 }
-.page:nth-child(1), .page:nth-child(3){
-    background-color: white;
+.page:nth-child(2),
+.page:nth-child(4) {
+  background-color: white;
 }
