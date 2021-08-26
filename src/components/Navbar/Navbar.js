@@ -1,7 +1,7 @@
 import "./navbar.css";
 export default function Navbar(params) {
   return (
-    <div id={"nav"}>
+    <div id={"nav"} className={"open"}>
       <div>
         <ul id={"navitems"}>
           <li>

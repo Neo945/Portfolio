@@ -1,0 +1,24 @@
+#type {
+  margin: 10px;
+  margin-left: 0px;
+}
+#type::after {
+  position: absolute;
+  content: "";
+  height: 4em;
+  width: 5px;
+  border-left: 5px solid rgb(0, 0, 0);
+  margin-left: 5px;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

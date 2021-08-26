@@ -1,13 +1,6 @@
 import "./title.css";
-
-function Blink(params) {
-  return (
-    <span
-      id="text"
-      style={{ height: "10px", margin: "10px", marginLeft: "0px" }}
-    ></span>
-  );
-}
+import Blink from "../blink/blink";
+import logo from "../static/image.jpg";
 
 export default function Title(params) {
   return (
@@ -28,6 +21,10 @@ export default function Title(params) {
             .split("")
             .map((ele) => (ele === " " ? <pre>{ele}</pre> : <div>{ele}</div>))}
         </div>
+        <Blink />
+      </div>
+      <div id="img">
+        <img src={logo} width="200px" height="200px" alt="title" />
       </div>
     </div>
   );

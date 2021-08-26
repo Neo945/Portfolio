@@ -6,7 +6,8 @@
   justify-content: center;
   align-items: center;
 }
-#title > div > div {
+#title > div > div,
+#title > div > pre {
   -webkit-text-stroke: 3px black;
   color: transparent;
   font-size: 5em;
@@ -24,6 +25,7 @@
 @keyframes bounce {
   0% {
     transform: scale(1, 1) translateY(0);
+    color: black;
   }
   10% {
     transform: scale(1.1, 0.9) translateY(0);
@@ -43,4 +45,11 @@
   100% {
     transform: scale(1, 1) translateY(0);
   }
+}
+#img {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  clip-path: circle(50%);
 }
