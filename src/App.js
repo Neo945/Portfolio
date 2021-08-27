@@ -1,10 +1,6 @@
 import "./app.css";
 import { useState } from "react";
-import { Page, Navbar, Title, AboutMe, Contact } from "./components";
-
-function Sample(params) {
-  return <div></div>;
-}
+import { Page, Navbar, Title, AboutMe, Contact, Project } from "./components";
 
 function Cursor(params) {
   return <div id={"cursor"} className={params.is ? "active" : ""}></div>;
@@ -28,7 +24,7 @@ function App() {
         <Cursor is={active} />
         <Page id={"home"} component={Title} />
         <Page id={"about"} component={AboutMe} />
-        <Page id={"project"} component={Sample} />
+        <Page id={"project"} component={Project} />
         <Page id={"contact"} component={Contact} />
       </div>
     </div>

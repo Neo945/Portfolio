@@ -3,5 +3,6 @@ import Navbar from "./Navbar/Navbar";
 import Title from "./title/title";
 import AboutMe from "./aboutme/aboutme";
 import Contact from "./contact/contact";
+import Project from "./projects/project";
 
-export { Page, Contact, Navbar, Title, AboutMe };
+export { Page, Project, Contact, Navbar, Title, AboutMe };
