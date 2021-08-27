@@ -1,6 +1,6 @@
 import "./app.css";
 import { useState } from "react";
-import { Page, Navbar, Title } from "./components";
+import { Page, Navbar, Title, AboutMe } from "./components";
 
 function Sample(params) {
   return <div></div>;
@@ -27,7 +27,7 @@ function App() {
       <div id={"content"}>
         <Cursor is={active} />
         <Page id={"home"} component={Title} />
-        <Page id={"about"} component={Sample} />
+        <Page id={"about"} component={AboutMe} />
         <Page id={"project"} component={Sample} />
         <Page id={"contact"} component={Sample} />
       </div>

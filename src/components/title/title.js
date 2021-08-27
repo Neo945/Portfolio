@@ -5,6 +5,9 @@ import logo from "../static/image.jpg";
 export default function Title(params) {
   return (
     <div id={"title"}>
+      <div id="img">
+        <img src={logo} width="345.6px" height="460.8px" alt="title" />
+      </div>
       <div>
         <div className={"text"}>
           {"Finally, you found me!"
@@ -22,9 +25,6 @@ export default function Title(params) {
             .map((ele) => (ele === " " ? <pre>{ele}</pre> : <div>{ele}</div>))}
         </div>
         <Blink />
-      </div>
-      <div id="img">
-        <img src={logo} width="200px" height="200px" alt="title" />
       </div>
     </div>
   );

@@ -1,0 +1,12 @@
+#aboutme {
+  color: white;
+  position: relative;
+}
+#aboutme > div {
+  position: absolute;
+  top: 15em;
+  left: 10em;
+}
+.aboutme-content {
+  width: 50%;
+}
