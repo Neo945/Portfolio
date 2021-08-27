@@ -1,6 +1,6 @@
 import "./app.css";
 import { useState } from "react";
-import { Page, Navbar, Title, AboutMe } from "./components";
+import { Page, Navbar, Title, AboutMe, Contact } from "./components";
 
 function Sample(params) {
   return <div></div>;
@@ -29,7 +29,7 @@ function App() {
         <Page id={"home"} component={Title} />
         <Page id={"about"} component={AboutMe} />
         <Page id={"project"} component={Sample} />
-        <Page id={"contact"} component={Sample} />
+        <Page id={"contact"} component={Contact} />
       </div>
     </div>
   );
