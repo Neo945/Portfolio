@@ -7,15 +7,10 @@ function Card(props) {
       className={"card"}
       style={{ left: `${props.content.id * 10}%` }}
       onMouseOver={async () => {
-        for (let i = props.content.id - 2; i >= 0; i--) {
-          document.getElementsByClassName("card")[
-            i
-          ].style.transform = `translateX(-${20 * (i + 1)}px)`;
-        }
-        for (let i = list.length - props.content.id; i > 0; i--) {
-          document.getElementsByClassName("card")[
-            6 - i
-          ].style.transform = `translateX(${350 - 70 * (6 - i)}px)`;
+        const list = document.getElementsByClassName("card");
+        const id = props.content.id;
+        for (let i = id; i < list.length; i++) {
+          list[i].style.transform = `translateX(${50 * (6 - i + id)}px)`;
         }
       }}
       onMouseLeave={async () => {
@@ -37,7 +32,7 @@ export default function Project(props) {
   return (
     <div id={"proj"}>
       <>
-        {/* <div className={"project-title"}>Projects</div> */}
+        <div className={"project-title"}>Projects</div>
         <div className={"project-content"}>
           {list.map((ele) => (
             <Card overlap={ele.id + 1} content={ele} key={`${ele.id}`} />

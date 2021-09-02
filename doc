@@ -4,3 +4,28 @@
         // document.getElementsByClassName("card")[
         //   props.content.id - 1
         // ].style.transform = `translateX(-${60 * (props.overlap - 1) + 20}%)`;
+className={"card"}
+      style={{ transform: trans(30 * -1 * props.content.id, 0) }}
+      // style={{ left: `${props.content.id * 10}%` }}
+      onMouseOver={async () => {
+        for (let i = 0; i < props.content.id - 2; i++) {
+          document.getElementsByClassName("card")[i].style.transform = `${trans(
+            10,
+            0
+          )}`;
+        }
+      }}
+      onMouseLeave={async () => {
+        for (let i = 0; i < list.length; i++) {
+          document.getElementsByClassName("card")[i].style.transform = `${trans(
+            0,
+            0
+          )}`;
+        }
+      }}
+       // for (let i = 0; i < id - 1; i++) {
+        // list[i].style.transform = `translateX(-${
+        // 90 - 5 * i + 90 / (5 - i)
+        // 20 * (i + id) - 20 / (5 - i)
+        // }px)`;
+        // }
