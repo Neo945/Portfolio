@@ -1,0 +1,6 @@
+        // document.getElementsByClassName("card")[
+        //   props.content.id - 1
+        // ].style.transform = `translateX(-${60 * (props.overlap - 1)}%)`;
+        // document.getElementsByClassName("card")[
+        //   props.content.id - 1
+        // ].style.transform = `translateX(-${60 * (props.overlap - 1) + 20}%)`;
