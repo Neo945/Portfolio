@@ -22,7 +22,7 @@ function Card(props) {
       <div className="shadow"></div>
       <div className={"card-content"}>
         <div className={"card-title"}>{props.content.title}</div>
-        <div className={"card-body"}>{"props.content.description"}</div>
+        <div className={"card-body"}>{props.content.description}</div>
       </div>
     </div>
   );

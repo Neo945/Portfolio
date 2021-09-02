@@ -1,38 +1,44 @@
 [
   {
     "id": 1,
-    "title": "Project 1",
-    "background": "https://picsum.photos/id/1/300/300",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "title": "Pharmacy Management System",
+    "git": "https://github.com/Neo945/Pharmacy-Management-System",
+    "description": "Pharmacy Management System project is to improve the maintenance and manipulation of the drugs in the medicals.",
+    "bacground": ""
   },
   {
     "id": 2,
-    "title": "Project 2",
-    "background": "https://picsum.photos/id/2/300/300",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "title": "CourseCompanion",
+    "git": "https://github.com/Neo945/CourseCompanion",
+    "description": "CourseCompanion is a course tracker that tracks a series of recorded lectures and assists students.",
+    "bacground": ""
   },
   {
     "id": 3,
-    "title": "Project 3",
-    "background": "https://picsum.photos/id/3/300/300",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "title": "Musica",
+    "git": "https://github.com/Neo945/Musica",
+    "description": "Social media platform exclusively dedicated to “Art”",
+    "bacground": ""
   },
   {
     "id": 4,
-    "title": "Project 4",
-    "background": "https://picsum.photos/id/4/300/300",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+    "title": "Movie Recommender System",
+    "git": "https://github.com/Neo945/Movie-Recommender-System",
+    "description": "System which will recommend movies based on your past previous history.",
+    "bacground": ""
   },
   {
     "id": 5,
-    "title": "Project 5",
-    "background": "https://picsum.photos/id/5/300/300",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "title": "Restaurant Page",
+    "git": "https://github.com/Neo945/Restaurant-Page",
+    "description": "Static web page for a restaurant",
+    "bacground": ""
   },
   {
     "id": 6,
-    "title": "Project 6",
-    "background": "https://picsum.photos/id/6/300/300",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "title": "LearnIt API",
+    "git": "https://github.com/Neo945/learnit-2/tree/main/server",
+    "description": "LearnIt is all about organizing, managing the classroom oriented tasks. It also involves maintaining the database of students, teachers and the classes.",
+    "bacground": ""
   }
 ]

@@ -13,21 +13,65 @@ export default function Contact(props) {
         </div>
         <div className={"contact-content"}>
           <ul style={{ transform: "translateX(1em)" }}>
-            <li>
-              <img src={`${linkedin}`} alt="" />
-              Linkedin
+            <li
+              onMouseOver={() =>
+                (document.getElementById("linkedin").style.opacity = 1)
+              }
+              onMouseLeave={() =>
+                (document.getElementById("linkedin").style.opacity = 0)
+              }
+            >
+              <img src={`${linkedin}`} className={"icon"} alt="" />
+              <div className="icon-text" id="linkedin">
+                Linkedin
+              </div>
             </li>
-            <li>
-              <img src={`${twitter}`} alt="" />
-              Twitter
+            <li
+              onMouseOver={() =>
+                (document.getElementById("twitter").style.opacity = 1)
+              }
+              onMouseLeave={() =>
+                (document.getElementById("twitter").style.opacity = 0)
+              }
+            >
+              <img src={`${twitter}`} className={"icon"} alt="" />
+              <div className="icon-text" id="twitter">
+                Twitter
+              </div>
             </li>
-            <li>
-              <img src={`${instagram}`} alt="" />
-              Instagram
+            <li
+              onMouseOver={() =>
+                (document.getElementById("instagram").style.opacity = 1)
+              }
+              onMouseLeave={() =>
+                (document.getElementById("instagram").style.opacity = 0)
+              }
+            >
+              <img src={`${instagram}`} className={"icon"} alt="" />
+              <div className="icon-text" id="instagram">
+                Instagram
+              </div>
             </li>
-            <li>
-              <img src={`${resume}`} alt="" />
-              Resume
+            <li
+              onMouseOver={() =>
+                (document.getElementById("resume").style.opacity = 1)
+              }
+              onMouseLeave={() =>
+                (document.getElementById("resume").style.opacity = 0)
+              }
+            >
+              <a
+                href={
+                  "https://drive.google.com/file/d/1R2YnU6Up6z5qGv0m6mAxl0vQv5yrIrsl/view?usp=sharing"
+                }
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img src={`${resume}`} className={"icon"} alt="" />
+              </a>
+              <div className="icon-text" id="resume">
+                Resume
+              </div>
             </li>
           </ul>
         </div>

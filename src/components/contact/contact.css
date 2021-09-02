@@ -15,10 +15,29 @@
 .contact-content ul li {
   margin: 1em;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .contact-content ul li img {
   width: 2em;
   height: 2em;
+}
+.icon {
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  transition: all 0.5s ease;
+}
+.icon:hover {
+  box-shadow: inset 1px 0 7px 1px #fff;
+}
+.icon:active {
+  transition: all 0.5s ease;
+  box-shadow: 1px 0 7px 1px #fff;
+}
+.icon-text {
+  opacity: 0;
+  transition: all 0.5s ease;
+  margin: 5px;
 }
