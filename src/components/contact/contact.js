@@ -8,7 +8,10 @@ export default function Contact(props) {
   return (
     <div id={"contact"}>
       <div>
-        <div className={"contact-header"}>
+        <div
+          className={"contact-header"}
+          style={{ margin: "20px", fontSize: "2em", fontweight: "bold" }}
+        >
           You can contact me from anywhere...
         </div>
         <div className={"contact-content"}>

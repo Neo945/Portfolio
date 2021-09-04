@@ -1,5 +1,6 @@
 import "./project.css";
 import list from "./data.json";
+import { useState } from "react";
 
 function Card(props) {
   return (
@@ -15,14 +16,16 @@ function Card(props) {
       }}
       onMouseLeave={async () => {
         for (let i = 0; i < 6; i++) {
-          document.getElementsByClassName("card")[i].style.transform = `none`;
+          document.getElementsByClassName("card")[
+            i
+          ].style.transform = `rotateX(20deg)`;
         }
       }}
     >
       <div className="shadow"></div>
       <div className={"card-content"}>
         <div className={"card-title"}>{props.content.title}</div>
-        <div className={"card-body"}>{props.content.description}</div>
+        {/* <div className={"card-body"}>{props.content.description}</div> */}
       </div>
     </div>
   );
