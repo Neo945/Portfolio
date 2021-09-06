@@ -7,7 +7,7 @@
   align-items: center;
   position: relative;
 }
-#title > div > div {
+.text > div {
   -webkit-text-stroke: 3px black;
   color: transparent;
   font-size: 5rem;
@@ -19,7 +19,7 @@
 .text {
   display: flex;
 }
-.text > div:hover {
+.bounce-ele {
   animation: bounce 1s ease;
 }
 @keyframes bounce {

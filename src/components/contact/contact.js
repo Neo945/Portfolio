@@ -3,6 +3,32 @@ import instagram from "../static/instagram.png";
 import linkedin from "../static/linkedin.png";
 import resume from "../static/resume.gif";
 import "./contact.css";
+const list = [
+  {
+    name: "Twitter",
+    icon: twitter,
+    id: "twitter",
+    url: "https://drive.google.com/file/d/1R2YnU6Up6z5qGv0m6mAxl0vQv5yrIrsl/view?usp=sharing",
+  },
+  {
+    name: "Instagram",
+    icon: instagram,
+    id: "instagram",
+    url: "https://drive.google.com/file/d/1R2YnU6Up6z5qGv0m6mAxl0vQv5yrIrsl/view?usp=sharing",
+  },
+  {
+    name: "LinkedIn",
+    icon: linkedin,
+    id: "linkedin",
+    url: "https://drive.google.com/file/d/1R2YnU6Up6z5qGv0m6mAxl0vQv5yrIrsl/view?usp=sharing",
+  },
+  {
+    name: "Resume",
+    icon: resume,
+    id: "resume",
+    url: "https://drive.google.com/file/d/1R2YnU6Up6z5qGv0m6mAxl0vQv5yrIrsl/view?usp=sharing",
+  },
+];
 
 export default function Contact(props) {
   return (
@@ -16,90 +42,29 @@ export default function Contact(props) {
         </div>
         <div className={"contact-content"}>
           <ul>
-            <li
-              onMouseOver={() =>
-                (document.getElementById("linkedin").style.opacity = 1)
-              }
-              onMouseLeave={() =>
-                (document.getElementById("linkedin").style.opacity = 0)
-              }
-            >
-              <a
-                href={
-                  "https://drive.google.com/file/d/1R2YnU6Up6z5qGv0m6mAxl0vQv5yrIrsl/view?usp=sharing"
+            {list.map((item) => (
+              <li
+                key={item.id}
+                onMouseOver={() =>
+                  (document.getElementById(item.id).style.opacity = 1)
                 }
-                rel="noreferrer"
-                target="_blank"
-              >
-                <img src={`${linkedin}`} className={"icon"} alt="" />
-              </a>
-              <div className="icon-text" id="linkedin">
-                Linkedin
-              </div>
-            </li>
-            <li
-              onMouseOver={() =>
-                (document.getElementById("twitter").style.opacity = 1)
-              }
-              onMouseLeave={() =>
-                (document.getElementById("twitter").style.opacity = 0)
-              }
-            >
-              <a
-                href={
-                  "https://drive.google.com/file/d/1R2YnU6Up6z5qGv0m6mAxl0vQv5yrIrsl/view?usp=sharing"
+                onMouseLeave={() =>
+                  (document.getElementById(item.id).style.opacity = 0)
                 }
-                rel="noreferrer"
-                target="_blank"
               >
-                <img src={`${twitter}`} className={"icon"} alt="" />
-              </a>
-              <div className="icon-text" id="twitter">
-                Twitter
-              </div>
-            </li>
-            <li
-              onMouseOver={() =>
-                (document.getElementById("instagram").style.opacity = 1)
-              }
-              onMouseLeave={() =>
-                (document.getElementById("instagram").style.opacity = 0)
-              }
-            >
-              <a
-                href={
-                  "https://drive.google.com/file/d/1R2YnU6Up6z5qGv0m6mAxl0vQv5yrIrsl/view?usp=sharing"
-                }
-                rel="noreferrer"
-                target="_blank"
-              >
-                <img src={`${instagram}`} className={"icon"} alt="" />
-              </a>
-              <div className="icon-text" id="instagram">
-                Instagram
-              </div>
-            </li>
-            <li
-              onMouseOver={() =>
-                (document.getElementById("resume").style.opacity = 1)
-              }
-              onMouseLeave={() =>
-                (document.getElementById("resume").style.opacity = 0)
-              }
-            >
-              <a
-                href={
-                  "https://drive.google.com/file/d/1R2YnU6Up6z5qGv0m6mAxl0vQv5yrIrsl/view?usp=sharing"
-                }
-                rel="noreferrer"
-                target="_blank"
-              >
-                <img src={`${resume}`} className={"icon"} alt="" />
-              </a>
-              <div className="icon-text" id="resume">
-                Resume
-              </div>
-            </li>
+                <a
+                  href={item.url}
+                  // className={"icon"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={item.icon} alt={item.name} />
+                </a>
+                <div className="icon-text" id={item.id}>
+                  {item.name}
+                </div>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
