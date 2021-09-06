@@ -10,12 +10,12 @@ export default function Contact(props) {
       <div>
         <div
           className={"contact-header"}
-          style={{ margin: "20px", fontSize: "2em", fontweight: "bold" }}
+          style={{ margin: "20px", fontweight: "bold" }}
         >
           You can contact me from anywhere...
         </div>
         <div className={"contact-content"}>
-          <ul style={{ transform: "translateX(1em)" }}>
+          <ul>
             <li
               onMouseOver={() =>
                 (document.getElementById("linkedin").style.opacity = 1)
@@ -24,7 +24,15 @@ export default function Contact(props) {
                 (document.getElementById("linkedin").style.opacity = 0)
               }
             >
-              <img src={`${linkedin}`} className={"icon"} alt="" />
+              <a
+                href={
+                  "https://drive.google.com/file/d/1R2YnU6Up6z5qGv0m6mAxl0vQv5yrIrsl/view?usp=sharing"
+                }
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img src={`${linkedin}`} className={"icon"} alt="" />
+              </a>
               <div className="icon-text" id="linkedin">
                 Linkedin
               </div>
@@ -37,7 +45,15 @@ export default function Contact(props) {
                 (document.getElementById("twitter").style.opacity = 0)
               }
             >
-              <img src={`${twitter}`} className={"icon"} alt="" />
+              <a
+                href={
+                  "https://drive.google.com/file/d/1R2YnU6Up6z5qGv0m6mAxl0vQv5yrIrsl/view?usp=sharing"
+                }
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img src={`${twitter}`} className={"icon"} alt="" />
+              </a>
               <div className="icon-text" id="twitter">
                 Twitter
               </div>
@@ -50,7 +66,15 @@ export default function Contact(props) {
                 (document.getElementById("instagram").style.opacity = 0)
               }
             >
-              <img src={`${instagram}`} className={"icon"} alt="" />
+              <a
+                href={
+                  "https://drive.google.com/file/d/1R2YnU6Up6z5qGv0m6mAxl0vQv5yrIrsl/view?usp=sharing"
+                }
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img src={`${instagram}`} className={"icon"} alt="" />
+              </a>
               <div className="icon-text" id="instagram">
                 Instagram
               </div>

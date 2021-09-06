@@ -7,11 +7,10 @@
   align-items: center;
   position: relative;
 }
-#title > div > div,
-#title > div > pre {
+#title > div > div {
   -webkit-text-stroke: 3px black;
   color: transparent;
-  font-size: 5em;
+  font-size: 5rem;
   transition: all 0.5s ease-in;
 }
 #title > div {
@@ -52,4 +51,42 @@
   top: 10%;
   right: 0;
   clip-path: circle(40%);
+}
+@media only screen and (max-width: 1564px) {
+  #title > div > div {
+    font-size: 4em;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  #title > div > div {
+    font-size: 3em;
+  }
+}
+@media only screen and (max-width: 950px) {
+  #title > div > div {
+    font-size: 2.5em;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #title > div > div {
+    font-size: 2em;
+  }
+  #title > div {
+    transform: none;
+  }
+  #title > div > div {
+    font-size: 2em;
+    -webkit-text-stroke: none;
+  }
+  .text > div {
+    -webkit-text-stroke: none;
+    font-size: 2rem;
+  }
+  #nav {
+    display: none;
+  }
+  #title {
+    transform: none;
+    width: 100%;
+  }
 }

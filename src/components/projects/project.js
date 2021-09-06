@@ -11,14 +11,16 @@ function Card(props) {
         const list = document.getElementsByClassName("card");
         const id = props.content.id;
         for (let i = id; i < list.length; i++) {
-          list[i].style.transform = `translateX(${50 * (6 - i + id)}px)`;
+          list[i].style.transform = `translateX(${
+            50 * (6 - i + id)
+          }px) rotateY(0deg)`;
         }
       }}
       onMouseLeave={async () => {
         for (let i = 0; i < 6; i++) {
           document.getElementsByClassName("card")[
             i
-          ].style.transform = `rotateX(20deg)`;
+          ].style.transform = `rotateY(20deg)`;
         }
       }}
     >
