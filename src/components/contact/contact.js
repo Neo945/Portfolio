@@ -8,19 +8,19 @@ const list = [
     name: "Twitter",
     icon: twitter,
     id: "twitter",
-    url: "https://drive.google.com/file/d/1R2YnU6Up6z5qGv0m6mAxl0vQv5yrIrsl/view?usp=sharing",
+    url: "https://twitter.com/ShreeshSrivast8",
   },
   {
     name: "Instagram",
     icon: instagram,
     id: "instagram",
-    url: "https://drive.google.com/file/d/1R2YnU6Up6z5qGv0m6mAxl0vQv5yrIrsl/view?usp=sharing",
+    url: "https://www.instagram.com/shreeshse105/",
   },
   {
     name: "LinkedIn",
     icon: linkedin,
     id: "linkedin",
-    url: "https://drive.google.com/file/d/1R2YnU6Up6z5qGv0m6mAxl0vQv5yrIrsl/view?usp=sharing",
+    url: "https://www.linkedin.com/in/shreesh-srivastava/",
   },
   {
     name: "Resume",

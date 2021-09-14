@@ -15,7 +15,6 @@
   border: 1px white solid;
   pointer-events: none;
   mix-blend-mode: difference;
-  display: none;
 }
 .active {
   width: 50px !important;

@@ -11,12 +11,37 @@ function Card(props) {
             className={"card-body"}
             style={{ fontSize: "1.5em", width: "100%", height: "auto" }}
           >
-            {props.content?.description}
+            <ul style={{ transform: "translateX(1em)" }}>
+              {props.content?.description.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <div>{item}</div>
+                  </li>
+                );
+              })}
+            </ul>
+            <div style={{ transform: "translateX(1em)" }}>
+              <div style={{ fontWeight: "bold" }}>Technologies used:</div>
+              <ul style={{ transform: "translateX(1em)" }}>
+                {props.content?.tech.map((item, index) => {
+                  return (
+                    <li key={index}>
+                      <div>{item}</div>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
           <a
             href={props.content?.git}
             className={"github-link"}
-            style={{ textDecoration: "none", color: "black" }}
+            style={{
+              textDecoration: "none",
+              color: "black",
+              transform: "translateX(1em)",
+              fontWeight: "bold",
+            }}
             target="_blank"
             rel="noopener noreferrer"
           >

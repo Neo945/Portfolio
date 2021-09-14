@@ -45,6 +45,7 @@
   .project-content {
     width: 100vw;
     font-size: 0.8em;
+    height: 70%;
   }
 }
 @media only screen and (max-width: 450px) {
