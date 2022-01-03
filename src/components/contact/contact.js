@@ -26,7 +26,7 @@ const list = [
     name: "Resume",
     icon: resume,
     id: "resume",
-    url: "https://drive.google.com/file/d/1R2YnU6Up6z5qGv0m6mAxl0vQv5yrIrsl/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1ez20E_MlRXZT6fcpOHcdX0vmRC8LPa5d/view?usp=sharing",
   },
 ];
 
